@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Andika&family=Montserrat&family=Montserrat+Alternates&display=swap'); 
+@media (max-width: 600px) {
+    *{
+        font-size: 1vw;
+        margin: 2px;
+    }
+}
+.potrait{
+    max-width: 50%;
+    max-height: 50%;
+}
+.potrait1{
+    max-width: 100%;
+    max-height: 200px;
+}
+.potrait2{
+    max-width: 100%;
+    max-height: 280px;
+}
+p{
+    font-family: 'Montserrat Alternates', sans-serif;
+    color: #BDCDD6;
+}
+h1, h2, h3, h5{
+    font-family: "Playfair Display", serif;
+}
+h5{
+    color: #151515;
+}
+body{
+    background-color: #BDCDD6;
+}
+h1, h3{
+    text-align: left;
+    color: #6096B4;
+    font-size: 36px;
+}
+.center{
+    text-align:center;
+}
+h2{
+    text-align: center;
+    color: #6096B4;
+}
+p{
+    padding: 5px;
+    color: #6096B4;
+}
+.main-header{
+    background-color: #FDFDFD;
+    padding-left: 10px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    right: 0px;
+    height: 50px;
+}
+.header-info{
+    text-align: left;
+    color: #151515;
+    padding: 0px;
+    margin: 14px;
+    position: absolute;
+    left: 0px;
+}
+.header-nav a{
+    color: #6096B4;
+}
+.header-nav a:hover{
+    background-color: transparent;
+}
+.header-info a{
+    color: #6096B4;
+    padding: 0px;
+    margin-bottom: 30px;
+    text-decoration: none;
+}
+.header-info a:hover{
+    background-color: transparent;
+}
+footer{
+    background-color: #FDFDFD;
+    left: 0px;
+    top: 15px;
+    right: 0px;
+    bottom: 0px;
+}
+.main-footer{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.left-footer{
+    margin-right: auto;
+    margin-left: 40px;
+}
+.right-footer{
+    margin-left: auto;
+    margin-right: 40px;
+}
+.info-left{
+    color: #6096B4;
+    text-align: left;
+    width: 100%;
+}
+.info-right{
+    color: #6096B4;
+    text-align: right;
+    width: 100%;
+}
+.info-center{
+    color: #6096B4;
+    text-align: center;
+    width: 100%;
+    padding-top: 5px;
+    border-top: 1px solid ;
+}
+nav{
+    position: absolute;
+    right: 0;
+    display: flex;
+}
+a{ 
+    background-color: #6096B4;
+    text-decoration: none;
+    color: #6096B4;
+    padding: 15px;
+    float: left;
+}
+.menu{
+    padding-bottom: 15px;
+}
+a:hover{
+    background-color: #6096B4;
+}
+body{
+    margin: 10%;
+}
+button{
+    background-color:#BDCDD6;
+    border-color: #6096B4;
+    color: #EEE9DA;
+    border-radius: 8px;
+    padding: 5px 8px;
+    margin: 5px;
+}
+button:hover{
+    background-color: #EEE9DA;
+    color: white;
+}
+button:active{
+    cursor: pointer; 
+    transform: translateY(4px);
+    box-shadow: 0px 4px white;
+}
+.main-div{
+    display: inline-flex;
+}
+div{
+    text-align: center;
+    justify-content: space-around;
+}
+.div1, .div2, .div3, .div4, .div5, .div6{
+    background-color: #E9ECEF;
+    flex-direction: row;
+    margin: 10px;
+    padding: 5px;
+    border-radius: 10px;
+}
+.jumbotron{
+    padding: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px;
+}
+.jumbotron h3, p{
+    color: #6096B4;
+}
+.about{
+    text-align: center;
+}
+.caroudel-inner{
+    padding: 30px;
+}
