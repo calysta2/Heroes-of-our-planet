@@ -12,7 +12,14 @@
         var totalPayment=products*numpro;
          document.getElementById('total').innerHTML=totalPayment;
         setTimeout(() => {
-            alert('THANK YOU FOR BUYING OUR PRODUCT!')
+            alert('Terimakasih telah menjadi pahlawan bumi!')
             window.location.assign('detail.html')    
+        }, 3000)
+    }
+
+    function notes(){
+        setTimeout(() => {
+            alert('Terimakasih telah mengunjungi website ini!')
+            window.location.assign('index.html')    
         }, 3000)
     }

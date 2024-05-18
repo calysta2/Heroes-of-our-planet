@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informasi</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/f90068558c.js" crossorigin="anonymous"></script> 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <header>
+        <div class="main-header"> 
+            <h3 class="header-info">
+                <a class="menu" href="index.html">SecondWave</a>
+            </h3>
+            <nav class="header-nav">
+                <a href="index.html">Beranda</a>  
+                <a href="order.html">Beli Disini</a>
+                <a href="detail.html">Informasi</a>
+            </nav>
+        </div>
+    </header>
+    <main class="about">
+        <div class="about-info">
+        <h3>SecondWave</h2>
+        <p>Sebuah website yang bisa anda gunakan untuk membantu <br> mengurangi limbah sampah di Indonesia. Beli produk kami dan bantu bumi!</p>
+        <br>
+        <h3>Kirimkan Pakaian Anda</h2>
+        <p>Jika anda ingin menyumbangkan pakaian bekas anda yang masih <br> layak pakai. Silahkan kunjungi kami di Instagram @secondwave </p>
+        <br>
+        <h3>Hubungi Kami</h2>
+        <p>Kami ingin mengajak anda semua untuk berkontribusi <br> membersihkan bumi ini. Maka kirimkan pesan anda agar kami dapat menjadi lebih baik. </p>
+        </div>
+        <div class="pesancontainer">
+            <form action="https://formsubmit.co/maheswari.calysta@gmail.com" method="POST">
+                <label>Nama Lengkap</label>
+                <input type="text" placeholder="Nama Lengkap">
+                <label>Email</label>
+                <input type="email" placeholder="Email">
+                <label>Pesan</label> <br>
+                <textarea class="textarea" type="text" name="pesan" id="message" cols="20" rows="1" placeholder=""></textarea> <br>
+                <br>
+                <button onclick="notes()">Kirim Pesan</button>
+            </form>
+        </div>
+        
+    </main>
+    <footer>
+        <div class="center-footer">
+            <div class="main-footer">
+                <div class="left-footer">
+                    <h3 class="info-left"><i class="fas fa-map-marker-alt"></i> <b>Alamat</b></h3>
+                    <p class="info-left"><i class="fas fa-thumbtack"></i> Jl. Senopati No. 83, Senayan, Kota Jakarta Selatan, 12190</p>
+                </div>
+                <div class="right-footer">
+                    <h3 class="info-right"><i class="fas fa-phone"></i> <b>Kontak</b></h3>
+                    <p class="info-right"> <i class="fas fa-mobile"></i> (021)5378852</p>
+                    <p class="info-right"> <i class="fab fa-instagram"></i> @SecondWave</p>
+                </div>
+            </div>
+
+            <div class="main-footer">
+                <p class="info-center">Copyright&copy; 2024 Designed by SecondWave</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

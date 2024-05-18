@@ -25,7 +25,7 @@ h1, h2, h3, h5{
     font-family: "Playfair Display", serif;
 }
 h5{
-    color: #BDCDD6;
+    color: #151515;
 }
 body{
     background-color: #BDCDD6;
@@ -34,10 +34,6 @@ h1, h3{
     text-align: left;
     color: #6096B4;
     font-size: 36px;
-}
-div{
-    text-align: center;
-    justify-content: space-around;
 }
 .center{
     text-align:center;
@@ -48,10 +44,10 @@ h2{
 }
 p{
     padding: 5px;
-    color: steelblue;
+    color: #6096B4;
 }
 .main-header{
-    background-color: #6096B4;
+    background-color: #FDFDFD;
     padding-left: 10px;
     padding-top: 3px;
     padding-bottom: 3px;
@@ -63,23 +59,35 @@ p{
 }
 .header-info{
     text-align: left;
-    color: #EEE9DA;
+    color: #151515;
     padding: 0px;
     margin: 14px;
     position: absolute;
     left: 0px;
 }
+.header-nav a{
+    color: #6096B4;
+}
+.header-nav a:hover{
+    background-color: transparent;
+}
+.header-info img{
+    text-align: left;
+    padding: 0px;
+}
 .header-info a{
-    padding: 0;
+    color: #6096B4;
+    padding: 0px;
+    margin-bottom: 30px;
     text-decoration: none;
 }
 .header-info a:hover{
     background-color: transparent;
 }
 footer{
-    background-color: #6096B4;
+    background-color: #FDFDFD;
     left: 0px;
-    top: 0px;
+    top: 15px;
     right: 0px;
     bottom: 0px;
 }
@@ -97,17 +105,17 @@ footer{
     margin-right: 40px;
 }
 .info-left{
-    color: #EEE9DA;
+    color: #6096B4;
     text-align: left;
     width: 100%;
 }
 .info-right{
-    color: #EEE9DA;
+    color: #6096B4;
     text-align: right;
     width: 100%;
 }
 .info-center{
-    color: #EEE9DA;
+    color: #6096B4;
     text-align: center;
     width: 100%;
     padding-top: 5px;
@@ -121,7 +129,7 @@ nav{
 a{ 
     background-color: #6096B4;
     text-decoration: none;
-    color: white;
+    color: #6096B4;
     padding: 15px;
     float: left;
 }
@@ -134,7 +142,7 @@ a:hover{
 body{
     margin: 10%;
 }
-button {
+button{
     background-color:#BDCDD6;
     border-color: #6096B4;
     color: #EEE9DA;
@@ -142,24 +150,33 @@ button {
     padding: 5px 8px;
     margin: 5px;
 }
-button:hover {
+button:hover{
     background-color: #EEE9DA;
     color: white;
 }
-button:active {
+button:active{
     cursor: pointer; 
     transform: translateY(4px);
     box-shadow: 0px 4px white;
 }
-.div1, .div2, .div3, .div4{
+.main-div{
+    display: flex;
+    margin-bottom: 50px;
+    flex-wrap: wrap;
+}
+div{
+    text-align: center;
+    justify-content: space-around;
+}
+.div1{
+    background-color: #E9ECEF;
+    flex-direction: row;
     margin: 10px;
-    background-color: #6096B4;
     padding: 5px;
     border-radius: 10px;
-    flex-direction: row;
 }
 .jumbotron{
-    padding: 100px ;
+    padding: 100px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -174,4 +191,66 @@ button:active {
 }
 .caroudel-inner{
     padding: 30px;
+}
+.button{
+    margin-right: 50px;
+    text-align: right;
+    
+}
+.formcontainer{
+    text-align: center;
+    margin: 100px;
+    padding: 30px;
+    background-color: #E9ECEF;
+    border-radius: 30px;
+}
+.formcontainer img {
+    width: 300px;
+}
+form{
+    text-align: left;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+input{
+    width: 100%;
+    display: inline-block;
+    margin-bottom: 10px;
+    padding: 5px;
+    border-radius: 3px;
+}
+label {
+    display: inline-block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+select{
+    width: 100%;
+    display: inline-block;
+    margin-bottom: 10px;
+    padding: 5px;
+    border-radius: 3px;
+}  
+.pesancontainer{
+    text-align: left;
+    margin: 100px;
+    padding: 30px;
+    background-color: #E9ECEF;
+    border-radius: 30px;
+    width: 600px;
+}
+.about{
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
+}
+.about-info{
+    padding: 20px;
+    margin: 20px;
+    text-align: left;
 }

@@ -8,43 +8,11 @@
         <link rel="stylesheet" href="style.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Andika&family=Montserrat&family=Montserrat+Alternates&display=swap" rel="stylesheet">
-        <script src="https://kit.fontawesome.com/f90068558c.js" crossorigin="anonymous"></script>
-
-        <style>
-            .formcontainer{
-                text-align: center;
-                margin-top: 100px;
-            }
-            .formcontainer img {
-                width: 300px;
-            }
-            form{
-                text-align: left;
-                width: 50%;
-                margin-left: auto;
-                margin-right: auto;
-            }
-            input{
-                width: 100%;
-                display: inline-block;
-                margin-bottom: 10px;
-                padding: 5px;
-                border-radius: 3px;
-            }
-            label {
-                display: inline-block;
-                margin-bottom: 5px;
-                font-weight: bold;
-            }
-            select{
-                width: 100%;
-                display: inline-block;
-                margin-bottom: 10px;
-                padding: 5px;
-                border-radius: 3px;
-            }  
-        </style>
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/f90068558c.js" crossorigin="anonymous"></script> 
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     </head>
     <body>
         <header>
@@ -52,74 +20,72 @@
                 <h3 class="header-info">
                     <a class="menu" href="index.html">SecondWave</a>
                 </h3>
-                <nav>
-                    <div class="dropdown">
-                        <div>
-                            <a href="index.html">Home</a>
-                        </div>    
-                        <div class="dropdown-content">
-                            <ul>
-                                <li class="dropdown-item">
-                                    <a class="dropdown-item" 
-                                    href="#products">Products</a>
-                                </li>
-                                <li class="dropdown-item">
-                                    <a class="dropdown-item"
-                                    href="price.html">Price List</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <a href="order.html">Buy Here</a>
-                    <a href="detail.html">Detail Page</a>
+                <nav class="header-nav">
+                    <a href="index.html">Beranda</a>  
+                    <a href="order.html">Beli Disini</a>
+                    <a href="detail.html">Informasi</a>
                 </nav>
             </div>
         </header>
 
         <main class="formcontainer">            
-                <h2 class="title">Buy Here</h2>
+                <h2 class="title">Pembayaran</h2>
 
                 <form action="https://formsubmit.co/maheswari.calysta@gmail.com" method="POST">
-                    <label>Products</label>
+                    <label>Produk</label>
                     <select name="products" id="products">
-                        <option value="30000">Garden of Flowers | Rp. 30.000/set</option>
-                        <option value="15000">The Happiest Smile | Rp. 15.000</option>
-                        <option value="15000">White Lies | Rp. 15.000</option>
-                        <option value="12000">Rainbow in the Sky | Rp. 12.000</option>
-                        <option value="24000">Lovey Dovey | Rp. 24.000/set</option>
+                        <option value="50000">Sweater Knit</option>
+                        <option value="30000">Crop Top Biru</option>
+                        <option value="30000">Kaos Strawberry</option>
+                        <option value="30000">Crop Top Hijau</option>
+                        <option value="50000">Celana Panjang Jeans</option>
+                        <option value="35000">Celana Pendek Jeans Wanita</option>
+                        <option value="40000">Celana Panjang Santai</option>
+                        <option value="50000">Sweater Garis Wanita</option>
+                        <option value="50000">Jaket Hitam Pria</option>
+                        <option value="50000">Sweater Coklat</option>
+                        <option value="40000">Kemeja Biru</option>
+                        <option value="50000">Sweater Biru</option>
+                        <option value="40000">Hoodie Abu</option>
+                        <option value="50000">Jaket Putih Biru</option>
+                        <option value="30000">Celana Pendek Jeans Pria</option>
+                        <option value="30000">Celana Pendek Biru</option>
+                        <option value="35000">Celana Panjang Putih</option>
+                        <option value="35000">Celana Panjang Biru</option>
+                        <option value="30000">Celana Pendek Putih</option>
                     </select>
-                    <label>Full name</label>
-                    <input type="text" placeholder="Name">
+                    <label>Jumlah Produk</label>
+                    <input id="numpro" type="number" placeholder="0" min="1">
+                    <label>Nama Lengkap</label>
+                    <input type="text" placeholder="Nama Lengkap">
                     <label>Email</label>
                     <input type="email" placeholder="Email">
-                    <label>Phone Number</label>
-                    <input type="number" placeholder="000000000000">
-                    <label>Amount of Products</label>
-                    <input id="numpro" type="number" placeholder="0" min="1">
-                    <label>Address</label> <br>
-                    <textarea class="textarea" type="text" name="message" id="message" cols="52" rows="8" placeholder=""></textarea> <br>
-                    <label>Notes</label> <br>
-                    <textarea class="textarea" type="text" name="message" id="message" cols="52" rows="8" placeholder=""></textarea>
-                    <h3>Total Payment: Rp. <span id="total"> </span></h3>
-                    <button onclick="payment()">Process Payment</button>
+                    <label>Nomor Telepon</label>
+                    <input type="number" placeholder="00000000000">
+                    <label>Alamat</label> <br>
+                    <textarea class="textarea" type="text" name="Alamat" id="message" cols="60" rows="8" placeholder=""></textarea> <br>
+                    <label>Catatan</label> <br>
+                    <textarea class="textarea" type="text" name="Catatan" id="message" cols="60" rows="2" placeholder=""></textarea>
+                    <h3>Total Pembayaran: Rp. <span id="total"> </span></h3>
+                    <button onclick="payment()">Proses Pembayaran</button>
                 </form>
         </main>
         <footer>
             <div class="center-footer">
                 <div class="main-footer">
                     <div class="left-footer">
-                        <h3 class="info-left"><i class="fas fa-map-marker-alt"></i> <b>Address</b></h3>
-                        <p class="info-left"><i class="fas fa-thumbtack"></i> Tukad Teh Aya Street No.45, Renon, Denpasar</p>
+                        <h3 class="info-left"><i class="fas fa-map-marker-alt"></i> <b>Alamat</b></h3>
+                        <p class="info-left"><i class="fas fa-thumbtack"></i> Jl. Senopati No. 83, Senayan, Kota Jakarta Selatan, 12190</p>
                     </div>
                     <div class="right-footer">
-                        <h3 class="info-right"><i class="fas fa-phone"></i> <b>Contacts</b></h3>
-                        <p class="info-right"> <i class="fas fa-mobile"></i> 0812675453</p>
-                        <p class="info-right"> <i class="fab fa-instagram"></i> @saturnjewelery.id</p>
+                        <h3 class="info-right"><i class="fas fa-phone"></i> <b>Kontak</b></h3>
+                        <p class="info-right"> <i class="fas fa-mobile"></i> (021)5378852</p>
+                        <p class="info-right"> <i class="fab fa-instagram"></i> @SecondWave</p>
                     </div>
                 </div>
-
+    
                 <div class="main-footer">
-                    <p class="info-center">Copyright&copy; 2021 Designed by Saturn Jewelry</p>
+                    <p class="info-center">Copyright&copy; 2024 Designed by SecondWave</p>
                 </div>
             </div>
         </footer>
